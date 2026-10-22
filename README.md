@@ -51,3 +51,23 @@ After deployment, submit `https://livingstonrefinishing.com/sitemap.xml` in a
 separate Search Console property for this domain. Measure non-branded organic
 traffic and qualified leads by hostname so the legacy domains remain a useful
 benchmark.
+
+## Projects photo gallery
+
+`/projects/` displays the three existing Workshop gallery photographs above the
+project notes, referencing `/uploads/ornate-chair-restoration.webp`,
+`/uploads/carved-table-base.webp`, and `/uploads/inlaid-wood-detail.webp` directly.
+No images are copied, moved, renamed, or removed; the homepage gallery is unchanged.
+
+Page-scoped CSS provides one column through 620px, two from 621–900px, and three
+from 901px. Images use a 4:3 aspect ratio, `object-fit: cover`, explicit 1600×1200
+dimensions, lazy loading, and descriptive alt text. Each photo links to its full-size
+file in a new tab. The existing `.button` style is used for the gallery's
+“Request a Free Assessment” link to `/contact/`. The introduction clarifies that
+the gallery photos are separate from the three written case studies.
+
+This is a static HTML change with no build step or added dependencies. To preview,
+serve the repository root with a local static server and open `/projects/`.
+Check widths of 375px, 768px, and 1280px for the 1/2/3-column layouts, open each
+photo, and follow the assessment link. Navigation, other pages, the contact form,
+and analytics code are unchanged.
